@@ -10,21 +10,40 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
+            display: flex;
+            max-width: 900px;
             background: white;
-            padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
         }
-        h1, h2 {
-            color: #333;
+        .sidebar {
+            background-color: #1f3b5c;
+            color: white;
+            padding: 20px;
+            width: 30%;
         }
-        .contacto a {
-            color: #007bff;
-            text-decoration: none;
+        .sidebar h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .sidebar p {
+            font-size: 14px;
+        }
+        .content {
+            padding: 20px;
+            width: 70%;
+        }
+        h2 {
+            color: #1f3b5c;
+            border-bottom: 2px solid #1f3b5c;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
         .descargar {
             display: inline-block;
@@ -39,50 +58,45 @@
 </head>
 <body>
     <div class="container">
-        <h1>Gabriela Michelle Alvarado López</h1>
-        <p><strong>Analista de Base de Datos | Desarrollo Web</strong></p>
-        <p class="contacto">
-            📧 Email: gabymich2325@gmail.com | 
-            🔗 <a href="https://www.linkedin.com/in/gabriela-alvarado-64a987224/">LinkedIn</a> | 
-            💻 <a href="https://github.com/Gabriela0503?tab=packages">GitHub</a>
-        </p>
-        
-        <h2>Sobre mí</h2>
-        <p> Soy Ingeniera en Tecnologías de la Información con experiencia en bases de datos y desarrollo web. Apasionada por la gestión de proyectos y la optimización de procesos.</p>
-        
-        <h2>Experiencia</h2>
-        <p><strong>Analista de Base de Datos - (2023 - 2025)</strong></p>
-        <ul>
-            <li>Diseño y optimización de bases de datos en Firebase y SQL Server.</li>
-            <li>Creación de dashboards e informes para toma de decisiones.</li>
-            <li>Desarrollo y mantenimiento de APIs para integración de datos.</li>
-        </ul>
-        
-        <h2>Educación</h2>
-        <p><strong>Ingeniería en Tecnologías de la Información</strong> - Universidad Politécnica de Tlaxcala (2021 - 2025)</p>
-        
-        <h2>Habilidades</h2>
-        <ul>
-            <li>💾 Bases de Datos: SQL Server, Firebase, MySQL</li>
-            <li>🌐 Desarrollo Web: HTML, CSS, JavaScript, React</li>
-            <li>👨‍💻 Programación: Python, Java, C++</li>
-            <li>🛠 Herramientas: Git, GitHub, Android Studio, Power BI</li>
-        </ul>
-        
-        <h2>Certificaciones</h2>
-        <ul>
-            <li>🔐 Curso de Seguridad Informática y Hacking Ético (2024)</li>
-            <li>📊 Certificación en Gestión de Proyectos Ágiles (2023)</li>
-            <li>🌍 Cursos de Cisco en redes y ciberseguridad</li>
-        </ul>
-        
-        <h2>Proyectos</h2>
-        <ul>
-            <li>🔬 <strong>Buscador de Átomos</strong>: Aplicación móvil para explorar la tabla periódica.</li>
-            <li>💧 <strong>Sistema de Riego Automatizado</strong>: Uso de sensores para optimizar el agua en cultivos.</li>
-        </ul>
-        
-        <a class="descargar" href="cv.pdf" download>📄 Descargar CV en PDF</a>
+        <div class="sidebar">
+            <h1>Gabriela Michelle Alvarado López</h1>
+            <p><strong>Ingeniera en Tecnologías de la Información</strong></p>
+            <p>📧 gabymich2325@gmail.com</p>
+            <p>🔗 <a href="https://www.linkedin.com/in/gabriela-alvarado-64a987224/" style="color: white;">LinkedIn</a></p>
+            <p>💻 <a href="https://github.com/Gabriela0503?tab=packages" style="color: white;">GitHub</a></p>
+        </div>
+        <div class="content">
+            <h2>Perfil</h2>
+            <p>Ingeniera en Tecnologías de la Información con experiencia en bases de datos, desarrollo web y gestión de proyectos.</p>
+            
+            <h2>Experiencia</h2>
+            <p><strong>Analista de Base de Datos - (2023 - 2025)</strong></p>
+            <ul>
+                <li>Diseño y optimización de bases de datos en Firebase y SQL Server.</li>
+                <li>Creación de dashboards e informes para toma de decisiones.</li>
+                <li>Desarrollo y mantenimiento de APIs para integración de datos.</li>
+            </ul>
+            
+            <h2>Educación</h2>
+            <p><strong>Universidad Politécnica de Tlaxcala</strong> (2021 - 2025)</p>
+            
+            <h2>Certificaciones</h2>
+            <ul>
+                <li>🔐 Seguridad Informática y Hacking Ético (2024)</li>
+                <li>📊 Gestión de Proyectos Ágiles (2023)</li>
+                <li>Partner: NDG Linux Unhatched(2024)</li
+                <li>CCNA: Fundamentos de Conmutación, Enrutamiento y Redes Inalámbricas(2024)</li>                                    
+                <li>CCNA: Redes Empresariales, Seguridad y Automatización(2025)</li>
+            </ul>
+            
+            <h2>Proyectos</h2>
+            <ul>
+                <li>🔬 <strong>Buscador de Átomos</strong>: Aplicación para explorar la tabla periódica.</li>
+                <li>💧 <strong>Sistema de Riego Automatizado</strong>: Uso de sensores para optimizar el agua en cultivos.</li>
+            </ul>
+            
+            <a class="descargar" href="cv.pdf" download>📄 Descargar CV en PDF</a>
+        </div>
     </div>
 </body>
 </html>
