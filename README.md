@@ -5,7 +5,7 @@
 ---
 
 ## 📝 Sobre mí  
-Soy **Ingeniera en Tecnologías de la Información** con experiencia en bases de datos y desarrollo web. Apasionada por la gestión de proyectos y la optimización de procesos.  
+Soy **Ingeniera en Tecnologías de la Información** con experiencia en bases de datos y desarrollo web. Apasionada por la gestión de proyectos y la optimización de procesos.  Con un fuerte interés en la gestión de proyectos, bases de datos, y desarrollo web. A lo largo de mi formación académica, he adquirido habilidades en la administración y optimización de sistemas de bases de datos, así como en la creación de aplicaciones web dinámicas y funcionales. Estoy comprometida con el aprendizaje continuo y estoy abierta a cualquier oportunidad que me permita seguir creciendo en estas áreas.
 
 ---
 
