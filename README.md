@@ -10,7 +10,7 @@ Soy **Ingeniera en Tecnologías de la Información** con experiencia en bases de
 ---
 
 ## 💼 Experiencia  
-### **Analista de Base de Datos - Empresa X** *(2023 - 2025)*  
+### **Analista de Base de Datos - *(2023 - 2025)*  
 - Diseño y optimización de bases de datos en **Firebase** y **SQL Server**.  
 - Creación de dashboards e informes para toma de decisiones.  
 - Desarrollo y mantenimiento de APIs para integración de datos.  
