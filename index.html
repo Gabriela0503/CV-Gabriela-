@@ -12,76 +12,84 @@
             background-color: #f4f4f4;
             display: flex;
             justify-content: center;
-        }
-        .container {
-            display: flex;
-            max-width: 900px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            flex-direction: row;
             flex-wrap: wrap;
         }
+
+        .container {
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
         .sidebar {
             background-color: #1f3b5c;
             color: white;
             padding: 20px;
-            width: 100%;
             text-align: center;
         }
+
         .sidebar img {
             width: 120px;
             height: 120px;
             border-radius: 50%;
             margin-bottom: 10px;
         }
+
         .sidebar h1 {
             font-size: 24px;
             margin-bottom: 10px;
         }
+
         .sidebar p {
             font-size: 14px;
         }
-        .details {
-            text-align: left;
-            font-size: 12px;
-            margin-top: 15px;
-        }
-        .details p {
-            margin: 5px 0;
-        }
+
         .content {
             padding: 20px;
-            width: 100%;
+            margin-top: 20px;
         }
+
         h2 {
             color: #1f3b5c;
             border-bottom: 2px solid #1f3b5c;
             padding-bottom: 5px;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
         }
+
         .descargar {
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 20px;
             padding: 10px 20px;
             background: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
         }
+
         .skills-section {
             text-align: left;
             margin-top: 20px;
         }
+
         .skill {
             margin-bottom: 10px;
         }
+
         .skill-name {
             font-size: 14px;
             margin-bottom: 3px;
         }
+
         .progress-bar {
             width: 100%;
             background-color: #ccc;
@@ -89,6 +97,7 @@
             height: 5px;
             overflow: hidden;
         }
+
         .progress {
             height: 5px;
             border-radius: 5px;
@@ -97,38 +106,51 @@
 
         /* Media Queries para dispositivos pequeños */
         @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
             .sidebar {
                 width: 100%;
                 text-align: center;
             }
+
             .content {
                 width: 100%;
             }
+
+            .container {
+                padding: 10px;
+                margin: 10px;
+            }
+
             .sidebar h1 {
                 font-size: 20px;
             }
+
+            .details {
+                font-size: 14px;
+            }
+
+            .skills-section {
+                font-size: 14px;
+            }
+
+            .progress-bar {
+                height: 4px;
+            }
+
             .descargar {
                 width: 100%;
                 text-align: center;
             }
-            .details {
-                font-size: 14px;
-            }
-            .skills-section {
-                font-size: 14px;
-            }
-            .progress-bar {
-                height: 4px;
+
+            .container {
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Sidebar Section -->
         <div class="sidebar">
             <img src="tu_foto.jpg" alt="Foto de Gabriela Alvarado">
             <h1>Gabriela Michelle Alvarado López</h1>
@@ -144,42 +166,13 @@
                 <p>5 de Febrero 2003</p>
                 <p>Estado de México (Chimalhuacán)</p>
             </div>
+
             <h3>ENLACES</h3>
             <p>🔗 <a href="https://www.linkedin.com/in/gabriela-alvarado-64a987224/" style="color: white;">LinkedIn</a></p>
             <p>💻 <a href="https://github.com/Gabriela0503" style="color: white;">GitHub</a></p>
-            
-            <!-- Sección de Competencias -->
-            <div class="skills-section">
-                <h3>Competencias</h3>
-                <div class="skill">
-                    <p class="skill-name">Liderazgo</p>
-                    <div class="progress-bar"><div class="progress" style="width: 50%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p class="skill-name">Comunicación Asertiva</p>
-                    <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p class="skill-name">Resolución de Problemas</p>
-                    <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p class="skill-name">Elaboración de Reportes</p>
-                    <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p class="skill-name">Trabajo en Equipo</p>
-                    <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
-                </div>
-
-                <h3>Idiomas</h3>
-                <div class="skill">
-                    <p class="skill-name">Inglés</p>
-                    <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
-                </div>
-            </div>
         </div>
 
+        <!-- Main Content Section -->
         <div class="content">
             <h2>Perfil</h2>
             <p style="text-align: justify;">Soy Ingeniera en Tecnologías de la Información con experiencia en bases de datos y desarrollo web. Apasionada por la gestión de proyectos y la optimización de procesos. Con un fuerte interés en la gestión de proyectos, bases de datos, y desarrollo web. A lo largo de mi formación académica, he adquirido habilidades en la administración y optimización de sistemas de bases de datos, así como en la creación de aplicaciones web dinámicas y funcionales. Estoy comprometida con el aprendizaje continuo y estoy abierta a cualquier oportunidad que me permita seguir creciendo en estas áreas.</p>
@@ -191,7 +184,7 @@
                 <li><strong>Programación:</strong> Python, Java, C++</li>
                 <li><strong>Herramientas:</strong> Git, GitHub, Android Studio, Power BI</li>
             </ul>
-            
+
             <h2>Experiencia</h2>
             <p><strong>Analista de Base de Datos - (2023 - 2025)</strong></p>
             <ul>
@@ -199,10 +192,10 @@
                 <li>Creación de dashboards e informes para toma de decisiones.</li>
                 <li>Desarrollo y mantenimiento de APIs para integración de datos.</li>
             </ul>
-            
+
             <h2>Educación</h2>
             <p><strong>Universidad Politécnica de Tlaxcala</strong> (2021 - 2025)</p>
-            
+
             <h2>Certificaciones</h2>
             <ul>
                 <li>Partner: NDG Linux Unhatched, Cisco Networking Academy (FEBRERO 2024)</li>
@@ -211,7 +204,7 @@
                 <li>CCNA: Fundamentos de Conmutación, Enrutamiento y Redes Inalámbricas, Cisco Networking Academy (DICIEMBRE 2024)</li>                                 
                 <li>CCNA: Redes Empresariales, Seguridad y Automatización, Cisco Networking Academy (FEBRERO 2025)</li>
             </ul>
-            
+
             <a class="descargar" href="cv.pdf" download>📄 Descargar CV en PDF</a>
         </div>
     </div>
