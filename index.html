@@ -23,6 +23,7 @@
             margin: 20px;
             padding: 20px;
             width: 100%;
+            box-sizing: border-box;
         }
 
         .sidebar {
@@ -31,6 +32,7 @@
             padding: 20px;
             width: 30%;
             text-align: center;
+            box-sizing: border-box;
         }
 
         .sidebar img {
@@ -62,6 +64,7 @@
         .content {
             padding: 20px;
             width: 70%;
+            box-sizing: border-box;
         }
 
         h2 {
@@ -77,20 +80,23 @@
 
         .descargar {
             display: inline-block;
-            margin-top: 10px;
+            margin-top: 20px;
             padding: 12px 25px;
-            background: #28a745;
+            background: #007bff;
             color: white;
             text-decoration: none;
             border-radius: 8px;
             font-size: 16px;
             font-weight: bold;
             text-align: center;
+            width: 100%;
+            max-width: 200px;
             transition: background-color 0.3s ease, transform 0.2s ease;
+            box-sizing: border-box;
         }
 
         .descargar:hover {
-            background: #218838;
+            background: #0056b3;
             transform: scale(1.05);
         }
 
@@ -161,6 +167,7 @@
             .descargar {
                 width: 100%;
                 text-align: center;
+                max-width: none; /* Para que el botón ocupe el 100% en pantallas pequeñas */
             }
 
             .container {
