@@ -18,12 +18,14 @@
             max-width: 900px;
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-direction: row;
+            flex-wrap: wrap;
         }
         .sidebar {
             background-color: #1f3b5c;
             color: white;
             padding: 20px;
-            width: 30%;
+            width: 100%;
             text-align: center;
         }
         .sidebar img {
@@ -49,7 +51,7 @@
         }
         .content {
             padding: 20px;
-            width: 70%;
+            width: 100%;
         }
         h2 {
             color: #1f3b5c;
@@ -92,6 +94,37 @@
             border-radius: 5px;
             background-color: #4CAF50;
         }
+
+        /* Media Queries para dispositivos pequeños */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sidebar {
+                width: 100%;
+                text-align: center;
+            }
+            .content {
+                width: 100%;
+            }
+            .sidebar h1 {
+                font-size: 20px;
+            }
+            .descargar {
+                width: 100%;
+                text-align: center;
+            }
+            .details {
+                font-size: 14px;
+            }
+            .skills-section {
+                font-size: 14px;
+            }
+            .progress-bar {
+                height: 4px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -111,8 +144,8 @@
                 <p>5 de Febrero 2003</p>
                 <p>Estado de México (Chimalhuacán)</p>
             </div>
-<h3>ENLACES</h3>
-  <p>🔗 <a href="https://www.linkedin.com/in/gabriela-alvarado-64a987224/" style="color: white;">LinkedIn</a></p>
+            <h3>ENLACES</h3>
+            <p>🔗 <a href="https://www.linkedin.com/in/gabriela-alvarado-64a987224/" style="color: white;">LinkedIn</a></p>
             <p>💻 <a href="https://github.com/Gabriela0503" style="color: white;">GitHub</a></p>
             
             <!-- Sección de Competencias -->
@@ -151,8 +184,7 @@
             <h2>Perfil</h2>
             <p style="text-align: justify;">Soy Ingeniera en Tecnologías de la Información con experiencia en bases de datos y desarrollo web. Apasionada por la gestión de proyectos y la optimización de procesos. Con un fuerte interés en la gestión de proyectos, bases de datos, y desarrollo web. A lo largo de mi formación académica, he adquirido habilidades en la administración y optimización de sistemas de bases de datos, así como en la creación de aplicaciones web dinámicas y funcionales. Estoy comprometida con el aprendizaje continuo y estoy abierta a cualquier oportunidad que me permita seguir creciendo en estas áreas.</p>
 
-
-     <h2>Habilidades</h2>
+            <h2>Habilidades</h2>
             <ul>
                 <li><strong>Bases de Datos:</strong> SQL Server, Firebase, MySQL</li>
                 <li><strong>Desarrollo Web:</strong> HTML, CSS, JavaScript, React</li>
@@ -173,9 +205,9 @@
             
             <h2>Certificaciones</h2>
             <ul>
-               <li>Partner: NDG Linux Unhatched, Cisco Networking Academy (FEBRERO 2024) (2024)</li>
+                <li>Partner: NDG Linux Unhatched, Cisco Networking Academy (FEBRERO 2024)</li>
                 <li>Introducción a la Ciberseguridad, Cisco Networking Academy (JUNIO 2024)</li>
-                <li>Introducción a las redes, Cisco Networking Academy (JULIO 2024) (2023)</li>
+                <li>Introducción a las redes, Cisco Networking Academy (JULIO 2024)</li>
                 <li>CCNA: Fundamentos de Conmutación, Enrutamiento y Redes Inalámbricas, Cisco Networking Academy (DICIEMBRE 2024)</li>                                 
                 <li>CCNA: Redes Empresariales, Seguridad y Automatización, Cisco Networking Academy (FEBRERO 2025)</li>
             </ul>
