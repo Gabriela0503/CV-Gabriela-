@@ -16,20 +16,20 @@
         }
 
         .container {
+            display: flex;
+            max-width: 900px;
             background: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
-            width: 100%;
             margin: 20px;
-            display: flex;
-            flex-direction: column;
             padding: 20px;
+            width: 100%;
         }
 
         .sidebar {
             background-color: #1f3b5c;
             color: white;
             padding: 20px;
+            width: 30%;
             text-align: center;
         }
 
@@ -49,9 +49,19 @@
             font-size: 14px;
         }
 
+        .details {
+            text-align: left;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        .details p {
+            margin: 5px 0;
+        }
+
         .content {
             padding: 20px;
-            margin-top: 20px;
+            width: 70%;
         }
 
         h2 {
@@ -63,12 +73,11 @@
         ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
         }
 
         .descargar {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 10px;
             padding: 10px 20px;
             background: #007bff;
             color: white;
@@ -106,6 +115,11 @@
 
         /* Media Queries para dispositivos pequeños */
         @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
             .sidebar {
                 width: 100%;
                 text-align: center;
@@ -113,11 +127,6 @@
 
             .content {
                 width: 100%;
-            }
-
-            .container {
-                padding: 10px;
-                margin: 10px;
             }
 
             .sidebar h1 {
@@ -142,8 +151,8 @@
             }
 
             .container {
-                flex-direction: column;
-                align-items: center;
+                padding: 10px;
+                margin: 10px;
             }
         }
     </style>
